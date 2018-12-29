@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: instant_kilogram_development
+
+test:
+  <<: *default
+  database: instant_kilogram_test
+
+production:
+  <<: *default
+  database: instant_kilogram_production
+  username: instant_kilogram
+  password: <%= ENV['INSTANT_KILOGRAM_DATABASE_PASSWORD'] %>
