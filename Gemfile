@@ -9,10 +9,9 @@ gem 'puma', '~> 3.11'
 
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'fog'
+gem 'fog-aws'
 
 gem 'bootstrap'
-gem 'slim-rails'
 gem 'jquery-rails'
 gem 'coffee-rails', '~> 4.2'
 gem 'sass-rails', '~> 5.0'
