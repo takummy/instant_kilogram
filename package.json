@@ -2,7 +2,7 @@
   "name": "instant_kilogram",
   "private": true,
   "dependencies": {
-    "bootstrap": "3",
+    "bootstrap": ">=4.1.2",
     "jquery": "^3.3.1"
   }
 }
