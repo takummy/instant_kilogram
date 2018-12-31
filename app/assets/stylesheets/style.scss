@@ -7,7 +7,7 @@ li {
   list-style: none;
 }
 
-.alert {
+.text-center {
   text-align: center;
 }
 
@@ -28,7 +28,7 @@ body {
           padding-top: 20px;
           text-align: center;
           a {
-            color: white;
+            color: black;
             padding: 0;
             width: 100px
           }
@@ -42,8 +42,8 @@ body {
         height: auto;
         display: inline-block;
         padding: 5px;
-        margin: 13px 0 0 200px;
-        color: #f3f9f9;
+        margin: 13px 0 0 20px;
+        color: black;
         font-size: 2.5em;
         font-weight: bold;
         text-transform: uppercase;
@@ -109,7 +109,7 @@ body {
 
 .jumbotron {
   padding-top: 80px;
-  background-color: #e9ebee;
+  background-color: #c7c6c6b5;
   h1, h2, p {
     text-align: center;
   }

@@ -1,0 +1,9 @@
+<div class="content-container col-center">
+  <div class="user-info col-md-6 col-center">
+    <h1 class="page-title"><%= @user.name %></h1>
+    <div class="email">
+      <%= @user.email %>
+      <%= link_to '編集', edit_user_registration_path %>
+    </div>
+  </div>
+</div>
