@@ -7,6 +7,18 @@ li {
   list-style: none;
 }
 
+#error_explanation {
+  text-align: center;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
 .text-center {
   text-align: center;
 }
