@@ -7,7 +7,7 @@
           <li class="col-md-2"><%= link_to '新規投稿', root_path %></li>
           <li class="col-md-2"><%= link_to '投稿一覧', root_path %></li>
           <li class="col-md-2"><%= link_to 'お気に入り一覧', root_path %></li>
-          <li class="col-md-2"><%= link_to 'ユーザーリスト', root_path %></li>
+          <li class="col-md-2"><%= link_to 'ユーザーリスト', users_path %></li>
           <li class="col-md-2"><%= link_to 'プロフィール', user_path(current_user) %></li>
           <li class="col-md-2"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
         <% else %>
