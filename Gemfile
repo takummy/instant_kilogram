@@ -8,7 +8,6 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 
 gem 'carrierwave'
-gem 'rmagick', '2.16.0', :git=>'http://github.com/rmagick/rmagick.git'
 gem 'mini_magick'
 gem 'fog-aws'
 
