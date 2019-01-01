@@ -4,7 +4,7 @@
     <div class="email">
       <div>
         <% if @user.icon.url %>
-          <%= image_tag @user.icon.url %>
+          <%= image_tag @user.icon.url(:thumb) %>
         <% else %>
           <%= image_tag 'default_user_icon.png' %>
         <% end %>
