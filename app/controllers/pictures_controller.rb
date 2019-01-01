@@ -19,7 +19,8 @@ class PicturesController < ApplicationController
   def create
     @picture = current_user.pictures.build(picture_params)
     if @picture.save
-      flash[:success] = '投稿完了'
+      PostInfoMailer.notification_mail(@picture.user).deliver
+      flash[:info] = '投稿完了'
       redirect_to pictures_path
     else
       render :new
@@ -47,7 +48,7 @@ class PicturesController < ApplicationController
 
   def destroy
     @picture.destroy
-    flash[:success] = '削除しました'
+    flash[:info] = '削除しました'
     redirect_to pictures_path
   end
 
