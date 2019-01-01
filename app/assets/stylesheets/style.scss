@@ -1,0 +1,258 @@
+html {
+  font-size: 62.5%;
+  height: 100%; 
+}
+
+li {
+  list-style: none;
+}
+
+.alert {
+  text-align: center;
+}
+
+#error_explanation {
+  text-align: center;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+body {
+  height: 100%;
+  background-color: #e9ebee36;
+  header {
+    width: 100%;
+    height: 100%;
+    .container-fluid {
+      ul{
+        width: 555px;
+        height: 25px;
+      }
+      .navbar-nav {
+        li {
+          width: 20%;
+          padding-top: 20px;
+          text-align: center;
+          a {
+            color: black;
+            padding: 0;
+            width: 100px
+          }
+        }
+      }
+      height: 83px;
+      background-color: #eeeff1;
+
+      a#logo {
+        width: auto;
+        height: auto;
+        display: inline-block;
+        padding: 5px;
+        margin: 13px 0 0 20px;
+        color: black;
+        font-size: 2.5em;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+      }
+
+      .navbar-right {
+        margin-top: 12px;
+        input {
+          margin: 0 10px;
+          width: 170px;
+        }
+      }
+
+      label {
+        color: white;
+      }
+    }
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    position: relative;
+  }
+  footer {
+    height: 60px;
+    width: 100%;
+    bottom: 0; 
+    left: 0;
+    background-color: white;
+    position: absolute;
+    display: table;
+    p {
+      color: #737373;
+      text-align: center;
+      vertical-align: middle;
+      display: table-cell;
+    }
+  }
+}
+
+.content-wrapper {
+  padding-bottom: 61px;
+}
+
+.col-center {
+  float: none;
+  margin: auto;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.btn.btn-primary.login-button {
+  width: 66px;
+  height: 24px;
+  font-size: 0.5em;
+  background-color: #5ba6e6;
+  border-color: #14436d;
+}
+
+.jumbotron {
+  padding-top: 80px;
+  background-color: #c7c6c6b5;
+  h1, h2, p {
+    text-align: center;
+  }
+
+  .btn.btn-primary.signup-button {
+    font-size: 1.5em;
+    width: 110px;
+    height: 55px;
+    background-color: #5ba6e6;
+    border-color: #14436d;
+    margin-top: 32px;
+    text-align: center;
+  }
+}
+
+input#picture_content {
+  height: 110px;
+}
+
+.user-info {
+  width: 100%;
+  height: 100%;
+  padding-top: 15px;
+  margin-top: 80px;
+  background-color: white;
+  text-align: center;
+  .email {
+    margin-bottom: 60px;
+  }
+  .users-picture {
+    li {
+      width: 100%;
+      margin-bottom: 10px;
+      list-style: none;
+    }
+  }
+}
+
+.users-wrapper {
+  width: 100%;
+  height: 100%;
+  margin-top: 1px;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+  li {
+    width: 25%;
+    padding: 15px;
+    border: 1px solid #e9ebee;
+    display: inline-block;
+    list-style: none;
+    a {
+      color: #5db0e4;
+    }
+  }
+}
+
+.page-navi {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.posts-wrapper {
+  width: 50%;
+  height: 100%;
+  margin-top: 1px;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+  border: 0.2px solid white;
+  li {
+    padding-top: 15px;
+    list-style: none;
+    a {
+      color: #5db0e4;
+    }
+  }
+}
+
+.picture-info {
+  width: 800px;
+  height: 300px;
+  padding-top: 35px;
+  margin-top: 35px;
+  background-color: white;
+  text-align: center;
+  .option {
+    display: inline-block;
+    border-top: 0.2px solid #e9ebee;
+    width: 500px;
+    margin-top: 100px;
+    padding-top: 10px;
+  }
+  li {
+    list-style: none;
+    padding-top: 15px;
+    a {
+      color: #5db0e4;
+    }
+  }
+}
+
+.submit-button {
+  text-align: center;
+  .btn.btn-primary {
+    font-size: 1.0em;
+    width: 116px;
+    height: 40px;
+    background-color: #5ba6e6;
+    border-color: #14436d;
+    margin-top: 30px;
+  }
+}
+
+.back-button {
+  text-align: center;
+  .btn.btn-primary {
+    font-size: 0.1em;
+    width: 6%;
+    height: 2%;
+    background-color: #6d7479;
+    border-color: #14436d;
+    margin-top: 10px;
+  }
+}
+
+.form-groups {
+  padding: 50px 50px 0 50px;
+  text-align: center;
+}
