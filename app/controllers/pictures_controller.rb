@@ -28,10 +28,12 @@ class PicturesController < ApplicationController
   end
 
   def index
+    @favorites = current_user.favorite_pictures.pluck(:id)
     @pictures = Picture.page(params[:page])
   end
 
   def show
+    @favorite = current_user.favorites.find_by(picture_id: @picture.id)
   end
 
   def edit

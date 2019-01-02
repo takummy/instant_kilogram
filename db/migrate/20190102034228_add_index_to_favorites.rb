@@ -1,6 +1,6 @@
-class AddIconToUsers < ActiveRecord::Migration[5.2]
+class AddIndexToFavorites < ActiveRecord::Migration[5.2]
   def up
-    add_column :users, :icon, :string
+    add_index :favorites, %i(user_id picture_id), unique: true
   end
 
   def down

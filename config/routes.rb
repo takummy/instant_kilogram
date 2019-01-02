@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  get 'favorites/index'
   root 'home#top'
 
   devise_for :users, controllers: {
@@ -10,6 +11,7 @@ Rails.application.routes.draw do
   resources :pictures do
     post :confirm, on: :collection
   end
+  resources :favorites, only: %i(index create destroy)
 
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
