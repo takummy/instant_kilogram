@@ -29,7 +29,7 @@ class PicturesController < ApplicationController
 
   def index
     @favorites = current_user.favorite_pictures.pluck(:id)
-    @pictures = Picture.page(params[:page])
+    @pictures = Picture.page(params[:page]).order_by_created_at
   end
 
   def show

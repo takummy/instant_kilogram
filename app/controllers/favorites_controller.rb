@@ -1,6 +1,7 @@
 class FavoritesController < ApplicationController
   def index
     @favorite_pictures = current_user.favorite_pictures.page(params[:page])
+                                     .order_by_created_at
   end
 
   def create
