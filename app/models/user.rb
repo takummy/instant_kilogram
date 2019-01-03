@@ -5,6 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :pictures
+  has_many :favorites, dependent: :destroy
+  has_many :favorite_pictures, through: :favorites, source: :picture
 
   validates :name, presence: true, length: { maximum: 30 }
 
