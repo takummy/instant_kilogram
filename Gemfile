@@ -30,7 +30,7 @@ gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'dotenv-rails'
 gem 'unicorn'
-gem 'therubyracer', platforms: :ruby
+gem 'mini_racer'
 
 gem 'faker'
 gem 'kaminari'
