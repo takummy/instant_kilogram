@@ -1,0 +1,12 @@
+<div class="content-wrapper">
+  <div class="jumbotron">
+    <% if user_signed_in? %>
+      <%= provide(:title, "Home") %>
+      <h2>写真をUPしましょう！</h2>
+    <% else %>
+      <h1>Welcome to Instant Kilogram</h1>
+      <p><small>~インスタのパクリです~</small></p>
+      <p><%= link_to '登録', new_user_registration_path, class: "btn btn-primary signup-button" %></p>
+    <% end %>
+  </div>
+</div>

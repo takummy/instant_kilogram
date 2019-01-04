@@ -1,0 +1,39 @@
+<h1 class="page-title">投稿一覧</h1>
+
+<p class="page-navi">
+  <small><%= page_entries_info @pictures %></small>
+</p>
+<%= paginate @pictures %>
+<% @pictures.each do |picture| %>
+  <div class="posts-wrapper col-md-6 col-center"> 
+    <ul class="col-md-6 col-center">
+      <li>
+        <%= image_tag picture.image.url(:thumb) if picture.image.url %>
+      </li>
+      <li>
+        <%= picture.content %>
+      </li>
+      <li class="posted-by">
+        <small id="owner">
+          <%= link_to user_path(picture.user.id) do %>
+            posted by <%= picture.user.name %> / 
+          <% end %>    
+        </small>
+        <small>
+          <%= link_to '詳細', picture_path(picture.id) %>
+        </small>
+      </li>
+      <li>
+        <% unless picture.user.id == current_user.id %>
+          <% if @favorites.include?(picture.id) %>
+            <%= link_to "お気に入り解除", favorite_path(id: picture.id), 
+                                                      method: :delete, class: "btn-s btn-danger" %>
+          <% else %>
+            <%= link_to "お気に入り", favorites_path(picture_id: picture.id), 
+                                                    method: :post, class: "btn-s btn-primary" %>
+          <% end %>
+        <% end %>
+      </li>
+    </ul> 
+  </div>
+<% end %>
