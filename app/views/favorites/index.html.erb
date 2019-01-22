@@ -7,7 +7,7 @@
 <% @favorite_pictures.each do |picture| %>
   <div class="posts-wrapper col-md-6 col-center"> 
     <ul class="col-md-6 col-center">
-      <li><%= image_tag picture.image.url(:thumb) if picture.image.url %></li>
+      <li><%= attachment_image_tag(picture, :image, :limit, 200, 200) %></li>
       <li>
         <%= picture.content %>
       </li>

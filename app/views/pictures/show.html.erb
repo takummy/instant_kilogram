@@ -3,7 +3,7 @@
   <div class="picture-info col-md-6 col-center">
     <ul>
       <li>
-        <%= image_tag @picture.image.url(:thumb) %>
+        <%= attachment_image_tag(@picture, :image, :limit, 200, 200) %>
       </li>
       <li>
         <%= @picture.content %>

@@ -8,8 +8,11 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 
 gem 'carrierwave'
-gem 'mini_magick'
+# gem 'mini_magick'
 gem 'fog-aws'
+gem 'refile', require: 'refile/rails', github: 'refile/refile'
+gem 'refile-mini_magick', github: 'refile/refile-mini_magick', branch: 'master'
+gem "refile-s3"
 
 gem 'bootstrap'
 gem 'jquery-rails'
