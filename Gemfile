@@ -2,7 +2,7 @@ source "https://rubygems.org"
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 ruby '2.5.3'
-gem 'rails', '~> 5.2.0'
+gem 'rails', '~> 5.2.2'
 
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
@@ -21,7 +21,7 @@ gem 'uglifier', '>= 1.3.0'
 gem "font-awesome-rails"
 gem "kaminari-bootstrap"
 
-gem 'bootsnap', '>= 1.1.0'
+gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'devise'
 gem 'omniauth'
