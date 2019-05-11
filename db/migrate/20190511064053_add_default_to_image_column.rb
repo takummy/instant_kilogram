@@ -1,6 +1,6 @@
-class AddIndexToFavorites < ActiveRecord::Migration[5.2]
+class AddDefaultToImageColumn < ActiveRecord::Migration[5.2]
   def up
-    add_index :favorites, %i(user_id picture_id), unique: true
+    change_column_default :pictures, :image, ""
   end
 
   def down
