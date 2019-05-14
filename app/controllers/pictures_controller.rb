@@ -12,12 +12,12 @@ class PicturesController < ApplicationController
   end
 
   def confirm
-    @picture = current_user.pictures.build(picture_params)
+    @picture = Picture.new(picture_params)
     render :new if @picture.invalid?
   end
 
   def create
-    @picture = current_user.pictures.build(picture_params)
+    @picture = Picture.new(picture_params)
     if @picture.save
       PostInfoMailer.notification_mail(@picture.user).deliver
       flash[:info] = '投稿完了'
@@ -60,7 +60,7 @@ class PicturesController < ApplicationController
   end
 
   def picture_params
-    params.require(:picture).permit(:image, :image_cache, :content)
+    params.require(:picture).permit(:image, :image_cache, :content).merge(user_id: current_user.id)
   end
 
   def correct_owner
